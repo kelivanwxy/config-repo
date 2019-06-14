@@ -7,7 +7,7 @@ spring:
       filters: stat
       driver-class-name: com.mysql.jdbc.Driver
       #基本属性
-      url: jdbc:mysql://192.168.0.101:3307/txd_official_web?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true&useSSL=false
+      url: jdbc:mysql://112.74.173.192:3306/txd_official_web?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true&useSSL=false
       username: root
       password: 123456
       #配置初始化大小/最小/最大
@@ -26,3 +26,7 @@ spring:
       test-on-return: false
       pool-prepared-statements: false
       max-pool-prepared-statement-per-connection-size: 20
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
